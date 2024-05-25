@@ -16,16 +16,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        public void onWindowInsetsChanged(WindowInsetsCompat insets) {
-            Insets insets = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            ViewCompat.setPaddingRelative(
-                view,
-                ViewCompat.getPaddingStart(view),
-                ViewCompat.getPaddingTop(view),
-                ViewCompat.getPaddingEnd(view),
-                insets.bottom
-            );
-        }
 
     }
 }
